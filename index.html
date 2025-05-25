@@ -4,32 +4,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>VikstarGaming</title>
-  <link rel="stylesheet" href="vikstargaming-style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- Video Background -->
+  <video autoplay muted loop id="bg-video">
+    <source src="assets/bg.mp4" type="video/mp4">
+  </video>
+
+  <div class="overlay"></div>
+
   <header>
     <h1>VikstarGaming</h1>
-    <p>Where Champions Play 🎮</p>
+    <p>⚡ Champions Play Here ⚡</p>
+    <div class="buttons">
+      <a href="#videos" class="btn">Watch Now</a>
+      <a href="https://www.youtube.com/@YourChannel" class="btn" target="_blank">Subscribe</a>
+      <a href="#" class="btn">Join Discord</a>
+    </div>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#videos">Videos</a>
-  </nav>
-
-  <div class="hero">
-    <h2>⚡ Powered by Skill, Fueled by Victory</h2>
-  </div>
-
   <section class="section" id="about">
-    <h3>About VikstarGaming</h3>
-    <p>Welcome to VikstarGaming — your home for clutch plays, outrageous goals, and non-stop action. If you're here, you're elite. Like Cole Palmer in stoppage time.</p>
+    <h2>About VikstarGaming</h2>
+    <p>Gaming. Glory. Greatness. Welcome to the elite world of VikstarGaming — where highlights explode, goals bend physics, and champions are born every night.</p>
   </section>
 
   <section class="section" id="videos">
-    <h3>🔥 Latest YouTube Videos</h3>
-    <div class="videos">
+    <h2>🔥 Latest YouTube Videos</h2>
+    <div class="video-grid">
       <div class="video-card">
         <iframe src="https://www.youtube.com/embed/jPzMaj6yW3s" allowfullscreen></iframe>
         <p>🎥 Live: Game Stream Replay</p>
@@ -46,10 +49,8 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 VikstarGaming. All gameplay, no nonsense.</p>
+    <p>&copy; 2025 VikstarGaming. No Pause. Just Play.</p>
   </footer>
-<link rel="stylesheet" href="vikstargaming-style.css" />
 
 </body>
 </html>
-
