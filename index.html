@@ -8,25 +8,42 @@
 </head>
 <body>
 
-  <!-- Fullscreen Background Video -->
+  <!-- Background Video -->
   <video autoplay muted loop id="bg-video">
     <source src="assets/bg.mp4" type="video/mp4" />
     Your browser does not support background video.
   </video>
-
   <div class="overlay"></div>
 
   <div class="content">
     <h1>⚡ VIKSTARGAMING ⚡</h1>
     <p>Welcome to the arena of legends.</p>
-    
+
     <div class="button-container">
       <a class="btn neon" href="https://www.youtube.com/embed/jPzMaj6yW3s" target="_blank">🎥 Watch Live Replay</a>
       <a class="btn neon" href="https://www.youtube.com/embed/9AT2npsRy9g" target="_blank">🔥 Best Goals</a>
       <a class="btn neon" href="https://www.youtube.com/embed/z1X1vqas_2M" target="_blank">🎮 Highlights</a>
       <a class="btn neon" href="https://www.youtube.com/@Vikstargaming" target="_blank">🔔 Subscribe</a>
+      <a class="btn neon" href="https://your-game-link.com" target="_blank">🕹️ Play My Game</a>
+      <button class="btn neon" onclick="toggleAbout()">👑 About Me</button>
     </div>
   </div>
+
+  <!-- About Me Section (Hidden Until Clicked) -->
+  <div id="about-me" class="about-popup">
+    <h2>About Lord Vikrant</h2>
+    <p>
+      I'm Lord Vikstar, the creator of VikstarGaming  and did u lads know mr beast is friends with me — a realm where noobs fear to enter and champions are forged. Whether I'm dropping goals, streaming action, or launching games, I bring the heat every time. Game hard. Rule harder.
+    </p>
+    <button onclick="toggleAbout()" class="btn neon">❌ Close</button>
+  </div>
+
+  <script>
+    function toggleAbout() {
+      const about = document.getElementById('about-me');
+      about.classList.toggle('show');
+    }
+  </script>
 
 </body>
 </html>
