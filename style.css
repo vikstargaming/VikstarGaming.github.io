@@ -1,82 +1,29 @@
-/* Reset + Base */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body, html {
-  height: 100%;
-  font-family: 'Segoe UI', sans-serif;
+/* About Me Popup */
+.about-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(20, 20, 20, 0.9);
   color: #fff;
-  overflow: hidden;
-}
-
-/* Background Video */
-#bg-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
-  z-index: -2;
-}
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.65);
-  z-index: -1;
-}
-
-/* Centered Content */
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 600px;
   text-align: center;
-  height: 100vh;
-  padding: 20px;
+  box-shadow: 0 0 40px #00ffc3;
+  z-index: 100;
 }
-h1 {
-  font-size: 3.5rem;
+.about-popup.show {
+  display: block;
+}
+.about-popup h2 {
+  margin-bottom: 15px;
   color: #00ffc3;
-  text-shadow: 0 0 20px #00ffc3;
+  text-shadow: 0 0 10px #00ffc3;
 }
-p {
-  font-size: 1.5rem;
-  margin: 10px 0 30px;
-  color: #eee;
-}
-
-/* Buttons */
-.button-container {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.btn {
-  padding: 15px 30px;
-  background: transparent;
-  border: 2px solid #00ffc3;
-  color: #00ffc3;
+.about-popup p {
   font-size: 1.2rem;
-  text-decoration: none;
-  border-radius: 12px;
-  transition: all 0.3s ease;
-}
-.btn:hover {
-  background-color: #00ffc3;
-  color: #000;
-  box-shadow: 0 0 25px #00ffc3, 0 0 50px #00ffc3;
-vikstargaming/
-├── index.html
-├── style.css
-└── assets/
-    └── bg.mp4   ← Your epic background video here
-
-  
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
