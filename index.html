@@ -10,51 +10,62 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #0e0e10;
       color: #fff;
+      background: url('https://i.imgur.com/M6SRsk9.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.75);
+      z-index: -1;
     }
     header {
-      background-color: #1f1f23;
-      padding: 20px;
+      padding: 30px;
       text-align: center;
+      background: rgba(0,0,0,0.6);
     }
     header h1 {
       margin: 0;
-      font-size: 2.5em;
-      color: #ff4757;
+      font-size: 3em;
+      color: #00ffff;
+      text-shadow: 2px 2px 5px #000;
     }
     nav {
-      background-color: #2f2f35;
+      background-color: rgba(15,15,15,0.7);
       padding: 10px;
       text-align: center;
     }
     nav a {
-      color: #ffffff;
+      color: #00ffff;
       text-decoration: none;
-      margin: 0 15px;
+      margin: 0 20px;
       font-weight: bold;
     }
     nav a:hover {
       color: #ff4757;
     }
     .hero {
-      padding: 50px;
+      padding: 60px 20px;
       text-align: center;
-      background-image: url('https://images.unsplash.com/photo-1616248240436-d362d87a0a2d');
-      background-size: cover;
-      background-position: center;
     }
     .hero h2 {
       font-size: 3em;
-      margin: 0;
-      color: #fff;
-      text-shadow: 2px 2px 4px #000;
+      color: #ffffff;
+      text-shadow: 2px 2px 10px #00ffff;
     }
     .section {
       padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,255,255,0.2);
     }
     .section h3 {
-      color: #ff4757;
+      color: #00ffff;
+      font-size: 2em;
     }
     .videos {
       display: flex;
@@ -67,18 +78,18 @@
       padding: 10px;
       width: 300px;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(255, 71, 87, 0.2);
+      box-shadow: 0 0 10px rgba(0,255,255, 0.2);
     }
     .video-card iframe {
       width: 100%;
       border-radius: 8px;
     }
     footer {
-      background-color: #1f1f23;
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
       color: #aaa;
+      background: rgba(0,0,0,0.6);
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -86,51 +97,36 @@
 
   <header>
     <h1>VikstarGaming</h1>
-    <p>Your daily dose of epic gameplay and action!</p>
+    <p>Where Champions Play 🎮</p>
   </header>
 
   <nav>
     <a href="#about">About</a>
     <a href="#videos">Videos</a>
-    <a href="#contact">Contact</a>
   </nav>
 
   <div class="hero">
-    <h2>Join the Vikstar Army!</h2>
+    <h2>⚡ Powered by Skill, Fueled by Victory</h2>
   </div>
 
   <section class="section" id="about">
     <h3>About VikstarGaming</h3>
-    <p>VikstarGaming is the ultimate hub for gamers looking for thrilling playthroughs, intense multiplayer matches, and honest game reviews. Whether you're into FPS, RPGs, or esports, this is your new home.</p>
+    <p>Welcome to VikstarGaming — your battlefield of epic wins, insane clutches, and next-level gameplay. Whether it’s shooters, sports, or full-on chaos, we bring the energy like Cole Palmer brings the celebration. 🕺🔥</p>
   </section>
 
   <section class="section" id="videos">
-    <h3>Latest Videos</h3>
+    <h3>🔥 Latest YouTube Videos</h3>
     <div class="videos">
       <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-        <p>🔥 Epic Victory Royale Highlights</p>
+        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+        <p>⚽ Game On: Wild Matchday!</p>
       </div>
       <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allowfullscreen></iframe>
-        <p>🎮 Multiplayer Mayhem - Best of 2025</p>
+        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+        <p>🎮 Triple Kill Madness!</p>
       </div>
     </div>
   </section>
 
-  <section class="section" id="contact">
-    <h3>Contact</h3>
-    <p>Email: contact@vikstargaming.com</p>
-    <p>Follow on social: 
-      <a href="#" style="color:#1da1f2;">Twitter</a> | 
-      <a href="#" style="color:#e1306c;">Instagram</a> | 
-      <a href="#" style="color:#ff0000;">YouTube</a>
-    </p>
-  </section>
-
   <footer>
-    <p>&copy; 2025 VikstarGaming. All rights reserved.</p>
-  </footer>
-
-</body>
-</html>
+    <p>&copy; 2025 VikstarGaming. All gameplay, no nonsense.</p
