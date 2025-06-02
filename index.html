@@ -12,20 +12,30 @@
   </video>
   <div class="overlay"></div>
 
-  <!-- Top Nav -->
+  <!-- Top Navigation -->
   <header>
     <div class="logo">⚡ VIKSTARGAMING ⚡</div>
     <nav>
+      <button onclick="showSection('about')">👑 Home</button>
       <button onclick="showSection('videos')">🎥 Videos</button>
       <button onclick="showSection('game')">🕹️ Game</button>
-      <button onclick="showSection('about')">👑 About</button>
       <button onclick="showSection('subscribe')">🔔 Subscribe</button>
     </nav>
   </header>
 
   <!-- Sections -->
   <main>
-    <section id="videos" class="page-section active">
+    <section id="about" class="page-section active">
+      <h2>👑 Lord Vikstar</h2>
+      <p>
+        Welcome to VikstarGaming — where legends are made, goals are legendary, and the grind is godlike. I’m Lord Vikstar, your host on this epic gaming journey.
+      </p>
+      <p>
+        Here, I stream insane matches, unleash fiery goals, and drop new games with unmatched energy. Whether you’re a fan, a fighter, or a follower — this is your arena.
+      </p>
+    </section>
+
+    <section id="videos" class="page-section">
       <h2>🎥 Top Highlights</h2>
       <div class="video-grid">
         <iframe src="https://www.youtube.com/embed/jPzMaj6yW3s" allowfullscreen></iframe>
@@ -39,16 +49,11 @@
       <iframe src="https://scratch.mit.edu/projects/1180090201/embed" allowfullscreen></iframe>
     </section>
 
-    <section id="about" class="page-section">
-      <h2>👑 About Lord Vikstar</h2>
-      <p>I'm Lord Vikstar, the creator of VikstarGaming — the battleground of champions. Watch, play, dominate.</p>
-    </section>
-
     <section id="subscribe" class="page-section">
       <h2>🔔 Subscribe to My Channel</h2>
       <a href="https://www.youtube.com/@Vikstargaming" target="_blank" class="btn">Go to YouTube</a>
       <form action="https://www.youtube.com/results" method="get" target="_blank">
-        <input type="text" name="search_query" placeholder="Search my videos..." />
+        <input type="text" name="search_query" placeholder="Search VikstarGaming videos..." />
         <input type="hidden" name="sp" value="EgIQAg%3D%3D" />
         <button type="submit">Search</button>
       </form>
