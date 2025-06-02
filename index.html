@@ -7,30 +7,26 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- Background Video -->
   <video autoplay muted loop id="bg-video" playsinline>
     <source src="assets/bg.mp4" type="video/mp4" />
   </video>
   <div class="overlay"></div>
 
-  <!-- Header/Nav -->
+  <!-- Top Nav -->
   <header>
     <div class="logo">⚡ VIKSTARGAMING ⚡</div>
     <nav>
-      <a href="#videos">🎥 Videos</a>
-      <a href="#game">🕹️ Game</a>
-      <a href="#about">👑 About</a>
-      <a href="#subscribe">🔍 Search & Subscribe</a>
+      <button onclick="showSection('videos')">🎥 Videos</button>
+      <button onclick="showSection('game')">🕹️ Game</button>
+      <button onclick="showSection('about')">👑 About</button>
+      <button onclick="showSection('subscribe')">🔔 Subscribe</button>
     </nav>
   </header>
 
-  <!-- Section Container -->
-  <div class="section-container">
-
-    <!-- Videos -->
-    <section id="videos">
-      <h2>🎥 Best Moments</h2>
+  <!-- Sections -->
+  <main>
+    <section id="videos" class="page-section active">
+      <h2>🎥 Top Highlights</h2>
       <div class="video-grid">
         <iframe src="https://www.youtube.com/embed/jPzMaj6yW3s" allowfullscreen></iframe>
         <iframe src="https://www.youtube.com/embed/9AT2npsRy9g" allowfullscreen></iframe>
@@ -38,32 +34,32 @@
       </div>
     </section>
 
-    <!-- Game -->
-    <section id="game">
+    <section id="game" class="page-section">
       <h2>🕹️ Play My Game</h2>
       <iframe src="https://scratch.mit.edu/projects/1180090201/embed" allowfullscreen></iframe>
     </section>
 
-    <!-- About -->
-    <section id="about">
+    <section id="about" class="page-section">
       <h2>👑 About Lord Vikstar</h2>
-      <p>
-        I'm Lord Vikstar, the creator of VikstarGaming — where champions are made and noobs are destroyed. Whether I'm dropping goals, streaming action, or launching games, I bring the 🔥.
-      </p>
+      <p>I'm Lord Vikstar, the creator of VikstarGaming — the battleground of champions. Watch, play, dominate.</p>
     </section>
 
-    <!-- Subscribe + Search -->
-    <section id="subscribe">
-      <h2>🔍 Search & Subscribe</h2>
+    <section id="subscribe" class="page-section">
+      <h2>🔔 Subscribe to My Channel</h2>
+      <a href="https://www.youtube.com/@Vikstargaming" target="_blank" class="btn">Go to YouTube</a>
       <form action="https://www.youtube.com/results" method="get" target="_blank">
-        <input type="text" name="search_query" placeholder="Search VikstarGaming videos..." />
+        <input type="text" name="search_query" placeholder="Search my videos..." />
         <input type="hidden" name="sp" value="EgIQAg%3D%3D" />
-        <button type="submit">🔎 Search</button>
+        <button type="submit">Search</button>
       </form>
-      <a class="btn" href="https://www.youtube.com/@Vikstargaming" target="_blank">🔔 Subscribe to My Channel</a>
     </section>
+  </main>
 
-  </div>
-
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.page-section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
 </body>
 </html>
