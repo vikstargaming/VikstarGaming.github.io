@@ -3,69 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>VikstarGaming Merch</title>
+  <title>VikstarGaming - God Mode</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Header Navigation -->
+  <!-- Background Video -->
+  <video autoplay muted loop id="bg-video" playsinline>
+    <source src="assets/bg.mp4" type="video/mp4" />
+  </video>
+  <div class="overlay"></div>
+
+  <!-- Header/Nav -->
   <header>
-    <div class="container">
-      <div class="logo">⚡ VIKSTARGAMING ⚡</div>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#merch">Merch</a>
-        <a href="#about">About</a>
-      </nav>
-    </div>
+    <div class="logo">⚡ VIKSTARGAMING ⚡</div>
+    <nav>
+      <a href="#videos">🎥 Videos</a>
+      <a href="#game">🕹️ Game</a>
+      <a href="#about">👑 About</a>
+      <a href="#subscribe">🔍 Search & Subscribe</a>
+    </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>God Mode Activated</h1>
-      <p>Official VikstarGaming Apparel & Merch</p>
-      <a href="#merch" class="btn">🛍️ Shop Now</a>
-    </div>
-  </section>
+  <!-- Section Container -->
+  <div class="section-container">
 
-  <!-- Merch Section -->
-  <section id="merch" class="product-section">
-    <h2>🔥 Featured Merch</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="https://via.placeholder.com/300x300" alt="T-Shirt">
-        <h3>Vikstar T-Shirt</h3>
-        <p>$24.99</p>
-        <a class="btn" href="#">Buy Now</a>
+    <!-- Videos -->
+    <section id="videos">
+      <h2>🎥 Best Moments</h2>
+      <div class="video-grid">
+        <iframe src="https://www.youtube.com/embed/jPzMaj6yW3s" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/9AT2npsRy9g" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/z1X1vqas_2M" allowfullscreen></iframe>
       </div>
-      <div class="product-card">
-        <img src="https://via.placeholder.com/300x300" alt="Hoodie">
-        <h3>God Mode Hoodie</h3>
-        <p>$44.99</p>
-        <a class="btn" href="#">Buy Now</a>
-      </div>
-      <div class="product-card">
-        <img src="https://via.placeholder.com/300x300" alt="Cap">
-        <h3>Victory Cap</h3>
-        <p>$19.99</p>
-        <a class="btn" href="#">Buy Now</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <h2>👑 About Lord Vikstar</h2>
-    <p>
-      I'm Lord Vikstar, founder of VikstarGaming — a realm where noobs fall and legends rise. From fiery goals to pixel domination, I rule the arena with style.
-    </p>
-  </section>
+    <!-- Game -->
+    <section id="game">
+      <h2>🕹️ Play My Game</h2>
+      <iframe src="https://scratch.mit.edu/projects/1180090201/embed" allowfullscreen></iframe>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 VikstarGaming. All rights reserved.</p>
-  </footer>
+    <!-- About -->
+    <section id="about">
+      <h2>👑 About Lord Vikstar</h2>
+      <p>
+        I'm Lord Vikstar, the creator of VikstarGaming — where champions are made and noobs are destroyed. Whether I'm dropping goals, streaming action, or launching games, I bring the 🔥.
+      </p>
+    </section>
+
+    <!-- Subscribe + Search -->
+    <section id="subscribe">
+      <h2>🔍 Search & Subscribe</h2>
+      <form action="https://www.youtube.com/results" method="get" target="_blank">
+        <input type="text" name="search_query" placeholder="Search VikstarGaming videos..." />
+        <input type="hidden" name="sp" value="EgIQAg%3D%3D" />
+        <button type="submit">🔎 Search</button>
+      </form>
+      <a class="btn" href="https://www.youtube.com/@Vikstargaming" target="_blank">🔔 Subscribe to My Channel</a>
+    </section>
+
+  </div>
 
 </body>
 </html>
