@@ -3,46 +3,69 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>VikstarGaming - God Mode</title>
+  <title>VikstarGaming Merch</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Background Video -->
-  <video autoplay muted loop id="bg-video" playsinline>
-    <source src="assets/bg.mp4" type="video/mp4" />
-    <!-- fallback image -->
-  </video>
-  <div class="overlay"></div>
-
-  <div class="content">
-    <h1>⚡ VIKSTARGAMING ⚡</h1>
-    <p>Welcome to the arena of legends.</p>
-
-    <div class="button-container">
-      <a class="btn neon" href="https://www.youtube.com/embed/jPzMaj6yW3s" target="_blank" rel="noopener noreferrer">🎥 Watch Live Replay</a>
-      <a class="btn neon" href="https://www.youtube.com/embed/9AT2npsRy9g" target="_blank" rel="noopener noreferrer">🔥 Best Goals</a>
-      <a class="btn neon" href="https://www.youtube.com/embed/z1X1vqas_2M" target="_blank" rel="noopener noreferrer">🎮 Highlights</a>
-      <a class="btn neon" href="https://www.youtube.com/@Vikstargaming" target="_blank" rel="noopener noreferrer">🔔 Subscribe</a>
-      <a class="btn neon" href="https://scratch.mit.edu/projects/1180090201" target="_blank" rel="noopener noreferrer">🕹️ Play My Game</a>
-      <button class="btn neon" onclick="toggleAbout()">👑 About Me</button>
+  <!-- Header Navigation -->
+  <header>
+    <div class="container">
+      <div class="logo">⚡ VIKSTARGAMING ⚡</div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#merch">Merch</a>
+        <a href="#about">About</a>
+      </nav>
     </div>
-  </div>
+  </header>
 
-  <div id="about-me" class="about-popup">
-    <h2>About Lord Vikstar</h2>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>God Mode Activated</h1>
+      <p>Official VikstarGaming Apparel & Merch</p>
+      <a href="#merch" class="btn">🛍️ Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Merch Section -->
+  <section id="merch" class="product-section">
+    <h2>🔥 Featured Merch</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x300" alt="T-Shirt">
+        <h3>Vikstar T-Shirt</h3>
+        <p>$24.99</p>
+        <a class="btn" href="#">Buy Now</a>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x300" alt="Hoodie">
+        <h3>God Mode Hoodie</h3>
+        <p>$44.99</p>
+        <a class="btn" href="#">Buy Now</a>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x300" alt="Cap">
+        <h3>Victory Cap</h3>
+        <p>$19.99</p>
+        <a class="btn" href="#">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>👑 About Lord Vikstar</h2>
     <p>
-      I'm Lord Vikstar, the creator of VikstarGaming — a realm where noobs fear to enter and champions are forged. Whether I'm dropping goals, streaming action, or launching games, I bring the heat every time. Game hard. Rule harder.
+      I'm Lord Vikstar, founder of VikstarGaming — a realm where noobs fall and legends rise. From fiery goals to pixel domination, I rule the arena with style.
     </p>
-    <button onclick="toggleAbout()" class="btn neon">❌ Close</button>
-  </div>
+  </section>
 
-  <script>
-    function toggleAbout() {
-      document.getElementById('about-me').classList.toggle('show');
-    }
-  </script>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 VikstarGaming. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
-
