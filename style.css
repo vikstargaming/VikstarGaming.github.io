@@ -1,47 +1,157 @@
-/* Prevent horizontal scrolling and center content */
-body, html {
-  overflow-x: hidden;
+/* Reset and prevent horizontal scroll */
+html, body {
   margin: 0;
   padding: 0;
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden; /* no horizontal scroll */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Make main content and sections center properly */
-main {
+/* Ensure every element respects viewport width */
+* {
+  box-sizing: border-box;
+  max-width: 100vw; /* No element wider than viewport */
+}
+
+/* Header full width and horizontal layout */
+header {
+  position: fixed;
+  top: 0;
   width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(0,0,0,0.7);
+  z-index: 100;
+  box-sizing: border-box;
+}
+
+/* Logo aligned left */
+.logo {
+  color: #00ffc3;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+/* Navigation buttons in a row, no wrapping */
+nav {
+  display: flex;
+  gap: 15px;
+  flex-wrap: nowrap;
+}
+
+/* Buttons styling */
+nav button {
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: 2px solid #00ffc3;
+  background: transparent;
+  color: #00ffc3;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+nav button:hover {
+  background: #00ffc3;
+  color: #000;
+}
+
+/* Main full viewport area */
+main {
   height: 100vh;
+  width: 100vw;
+  padding-top: 80px; /* Space below fixed header */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Fix iframe width and responsiveness */
-.page-section iframe {
-  max-width: 90vw;
-  width: 600px;
-  height: 340px;
+/* Only one section visible */
+.page-section {
+  display: none;
+  height: calc(100vh - 80px);
+  width: 100vw;
+  overflow-y: auto;
+  padding: 30px;
   box-sizing: border-box;
+  text-align: center;
+  color: #00ffc3;
 }
 
-/* For the video grid container */
+/* Show active section */
+.page-section.active {
+  display: block;
+}
+
+/* Embedded videos - full width max */
+.page-section iframe {
+  width: 90vw;
+  max-width: 600px;
+  height: 340px;
+  border: none;
+  margin: 15px auto;
+  display: block;
+}
+
+/* Video grid with gap */
 .video-grid {
-  width: 100%;
-  max-width: 1200px;
+  display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 0 15px;
   box-sizing: border-box;
 }
 
-/* Make sure the nav and header don't cause overflow */
-header {
-  max-width: 100vw;
-  box-sizing: border-box;
-  padding: 15px 25px;
+/* Subscribe page form styles */
+form {
+  margin-top: 30px;
+}
+form input[type="text"] {
+  width: 250px;
+  max-width: 90vw;
+  padding: 12px 15px;
+  border-radius: 20px;
+  border: none;
+  margin-right: 10px;
+}
+form button {
+  padding: 12px 25px;
+  border-radius: 20px;
+  border: none;
+  background: #00ffc3;
+  color: #000;
+  font-weight: 700;
+  cursor: pointer;
 }
 
-/* Input and buttons don't overflow */
-form input[type="text"] {
-  max-width: calc(100vw - 150px);
+/* Subscribe button */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #00ffc3;
+  color: #000;
+  border-radius: 25px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* About page text style */
+#about h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 15px #00ffc3;
+}
+#about p {
+  font-size: 1.5rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  text-shadow: 0 0 10px #00ffc3;
 }
